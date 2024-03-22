@@ -206,7 +206,7 @@ export default function NavBar() {
           About
         </NavLink>
       </Typography>
-      {/* <Typography
+      <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -216,9 +216,22 @@ export default function NavBar() {
           to="/service"
           className="flex items-center text-gray-900 font-semibold"
         >
-          Service
+          Services
         </NavLink>
-      </Typography> */}
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <NavLink
+          to="/team"
+          className="flex items-center text-gray-900 font-semibold"
+        >
+          Our Team
+        </NavLink>
+      </Typography>
       <Typography
         as="li"
         variant="small"
@@ -254,9 +267,6 @@ export default function NavBar() {
           </div>
           <div className="flex items-center gap-4">
             <div className="mr-2 hidden lg:block">{navList}</div>
-            <span className="text-xl lg:text-2xl">
-          <MdNotifications />
-        </span>
             <div className="flex items-center gap-x-1">
               {user?.email && <ProfileMenu />}
               {user?.email ? (
