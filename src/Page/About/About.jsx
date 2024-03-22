@@ -35,12 +35,12 @@ const About = () => {
               redefine the way you send and receive parcels.
             </p>
             <div className=" flex gap-10 items-center">
-              <div className=" rounded-md text-center text-white px-8 py-5 bg-green-700">
+              <div className=" rounded-md text-center text-white px-8 py-5 bg-green-500">
                 <h2 className=" text-4xl font-bold">300</h2>
                 <h2> Trusted Partner</h2>
               </div>
 
-              <div className=" rounded-md px-8 text-center text-white py-5 bg-green-700">
+              <div className=" rounded-md px-8 text-center text-white py-5 bg-green-500">
                 <h2 className=" text-4xl font-bold">100</h2>
                 <h2>Expert Driver</h2>
               </div>
@@ -56,11 +56,11 @@ const About = () => {
         </div>
       </div>
       <div className=" pt-16">
-        <div className="bg-[#0f172a] px-4 py-20 lg:h-[300px]">
-          <h2 className=" text-4xl text-center text-white ">
+        <div className="bg-gray-300 px-4 py-20 lg:h-[300px]">
+          <h2 className=" text-4xl text-center">
             How Delivery Works
           </h2>
-          <p className=" text-gray-600 lg:w-[600px] mx-auto py-3 text-center">
+          <p className=" text-gray-800 lg:w-[600px] mx-auto py-3 text-center">
             {" "}
             ordering is simple, and delivery is swift. Once you place your
             order, we handle the rest. Track your parcel in real-time, and our

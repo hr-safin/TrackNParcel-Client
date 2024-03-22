@@ -22,7 +22,7 @@ const FeatureSection = () => {
           <Card className="mt-6 ">
             <CardBody className=" text-center">
                 <div className=" flex justify-center items-center pb-3">
-                <span className=" text-5xl text-green-700 mx-auto "><FiPackage className=" text-center" /></span>
+                <span className=" text-5xl text-green-500 mx-auto "><FiPackage className=" text-center" /></span>
                 </div>
               
               <Typography variant="h5" color="blue-gray" className="mb-2">
@@ -39,7 +39,7 @@ const FeatureSection = () => {
           <Card className="mt-6 ">
             <CardBody className=" text-center">
             <div className=" flex justify-center items-center pb-3">
-                <span className=" text-5xl text-green-700 mx-auto "><LuTruck /></span>
+                <span className=" text-5xl text-green-500 mx-auto "><LuTruck /></span>
                 </div>
               <Typography variant="h5" color="blue-gray" className="mb-2">
               Super Fast Delivery
@@ -55,7 +55,7 @@ const FeatureSection = () => {
           <Card className="mt-6 ">
             <CardBody className=" text-center">
             <div className=" flex justify-center items-center pb-3">
-                <span className=" text-5xl text-green-700 mx-auto "><GrMapLocation /></span>
+                <span className=" text-5xl text-green-500 mx-auto "><GrMapLocation /></span>
                 </div>
               <Typography variant="h5" color="blue-gray" className="mb-2">
               Real-Time Tracking

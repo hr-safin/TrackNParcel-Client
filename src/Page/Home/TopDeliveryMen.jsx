@@ -17,7 +17,7 @@ const TopDeliveryMen = () => {
 
   return (
     <div>
-      <div className="text-4xl text-center font-bold pt-20">
+      <div className="text-4xl text-center font-bold pt-28">
         <h2>Top Delivery Men</h2>
       </div>
 
