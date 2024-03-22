@@ -6,7 +6,7 @@ import { MdPayments } from "react-icons/md";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { FaBoxOpen } from "react-icons/fa";
 import { Helmet } from "react-helmet";
-const AboutUs = () => {
+const About = () => {
   return (
     <>
       <Helmet>
@@ -15,21 +15,16 @@ const AboutUs = () => {
       <NavBar />
       <div className="w-full  mx-auto">
         <div
-          className="hero min-h-[60vh]"
-          style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/7706466/pexels-photo-7706466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-          }}
+          className="hero min-h-[30vh]"
         >
-          <div className="hero-overlay bg-opacity-50"></div>
-          <div className="hero-content text-center text-neutral-content">
+          <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold pt-16">About Us</h1>
+              <h1 className="mb-5 text-3xl md:text-4xl font-bold pt-16">About Us</h1>
             </div>
           </div>
         </div>
 
-        <div className=" bg-white lg:px-20 md:px-10 px-4 lg:my-10  my-20 mb-20  flex flex-col lg:flex-row justify-center gap-20 lg:ga-40 items-center">
+        <div className=" bg-white lg:px-20 md:px-10 px-4 lg:my-0  my-20 mb-20  flex flex-col lg:flex-row justify-center gap-20 lg:gap-40 items-center">
           <div>
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
               Best Service To Deliver Your Needs
@@ -128,4 +123,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default About;

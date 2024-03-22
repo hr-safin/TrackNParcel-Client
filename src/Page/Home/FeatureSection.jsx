@@ -13,7 +13,7 @@ const FeatureSection = () => {
   return (
     <div
     >
-      <div className=" flex justify-center items-center text-3xl md:text-4xl font-bold pt-20">
+      <div className=" flex justify-center items-center text-3xl md:text-4xl font-bold pt-32">
         Our Feature
       </div>
 
