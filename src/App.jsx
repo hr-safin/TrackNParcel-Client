@@ -34,6 +34,7 @@ import Payment from "./Payment/Payment";
 import PaymentSuccess from "./Payment/PaymentSuccess";
 import MyReview from "./DeliveryMan/MyReview";
 import Error from "./Error/Error";
+import BookNow from "./User/BookNow/BookNow";
 
 const queryClient = new QueryClient()
 function App() {
@@ -51,6 +52,14 @@ function App() {
         {
           path : "/about",
           element : <AboutUs />
+        },
+        {
+          path : "/service",
+          element : <AboutUs />
+        },
+        {
+          path : "/book",
+          element : <BookNow />
         },
         {
           path : "/contact",

@@ -226,6 +226,19 @@ export default function NavBar() {
         className="p-1 font-normal"
       >
         <NavLink
+          to="/book"
+          className="flex items-center text-gray-900 font-semibold"
+        >
+          Book Now
+        </NavLink>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <NavLink
           to="/team"
           className="flex items-center text-gray-900 font-semibold"
         >
