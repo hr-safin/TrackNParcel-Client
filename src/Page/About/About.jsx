@@ -6,6 +6,7 @@ import { MdPayments } from "react-icons/md";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { FaBoxOpen } from "react-icons/fa";
 import { Helmet } from "react-helmet";
+import Statistic from "../Home/statistic";
 const About = () => {
   return (
     <>
@@ -19,22 +20,22 @@ const About = () => {
         >
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="mb-5 text-3xl md:text-4xl font-bold pt-16">About Us</h1>
+              <h1 className="mb-5 text-3xl md:text-4xl font-bold lg:pt-16">About Us</h1>
             </div>
           </div>
         </div>
 
-        <div className=" bg-white lg:px-20 md:px-10 px-4 lg:my-0  my-20 mb-20  flex flex-col lg:flex-row justify-center gap-20 lg:gap-40 items-center">
+        <div className=" bg-white lg:px-28 md:px-10 px-4 lg:my-0  lg:my-20 mb-20  flex flex-col lg:flex-row justify-center gap-20 lg:gap-32 items-center">
           <div>
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl text-center lg:text-left  lg:text-5xl font-bold text-gray-900">
               Best Service To Deliver Your Needs
             </h2>
-            <p className=" text-gray-600 lg:w-[500px] pt-6 pb-6">
+            <p className=" text-gray-600 lg:text-left text-center lg:w-[500px] pt-6 pb-6">
               express connection to seamless courier services. Swift, secure,
               and reliable deliveries tailored to meet your needs. Let us
               redefine the way you send and receive parcels.
             </p>
-            <div className=" flex gap-10 items-center">
+            <div className=" flex  lg:flex md:flex md:flex-row lg:flex-row md:items-center md:justify-center lg:items-start lg:justify-start gap-10 items-center justify-center">
               <div className=" rounded-md text-center text-white px-8 py-5 bg-green-500">
                 <h2 className=" text-4xl font-bold">300</h2>
                 <h2> Trusted Partner</h2>
@@ -54,6 +55,9 @@ const About = () => {
             />
           </div>
         </div>
+      </div>
+      <div className=" pt-16 xl:pt-32">
+      <Statistic />
       </div>
       <div className=" pt-16">
         <div className="bg-gray-300 px-4 py-20 lg:h-[300px]">

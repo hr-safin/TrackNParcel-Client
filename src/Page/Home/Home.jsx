@@ -83,7 +83,6 @@ const Home = () => {
         </div>
         <About />
         <FeatureSection />
-        <Statistic />
         <TopDeliveryMen />
       </div>
     </>
