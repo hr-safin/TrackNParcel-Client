@@ -15,7 +15,7 @@ const ContactUsHome = () => {
                   </p>
                 </div>
 
-                <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+                <div class="grid grid-cols-1 gap-12 mt-20 lg:grid-cols-3">
                   <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
                     <div>
                       <span class="inline-block p-3 text-green-500 rounded-full bg-green-100/80 dark:bg-gray-800">

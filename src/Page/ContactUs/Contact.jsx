@@ -30,11 +30,8 @@ const Contact = () => {
             <section class="bg-white">
               <div class="container px-6 py-12 mx-auto">
                 <div>
-                  <p class="font-medium text-green-500 ">
-                    Contact us
-                  </p>
 
-                  <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl ">
+                  <h1 class="mt-8 text-2xl font-semibold text-gray-800 md:text-3xl ">
                     Get in touch
                   </h1>
 
