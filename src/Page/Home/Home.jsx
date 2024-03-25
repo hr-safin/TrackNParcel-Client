@@ -8,6 +8,7 @@ import FeatureSection from "./FeatureSection";
 import Statistic from "./statistic";
 import TopDeliveryMen from "./TopDeliveryMen";
 import About from "../About/About";
+import ContactUsHome from "../ContactUs/ContactUsHome";
 
 const Home = () => {
   return (
@@ -84,6 +85,7 @@ const Home = () => {
         <About />
         <FeatureSection />
         <TopDeliveryMen />
+        <ContactUsHome />
       </div>
     </>
   );

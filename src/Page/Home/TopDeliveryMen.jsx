@@ -21,7 +21,7 @@ const TopDeliveryMen = () => {
         <h2>Top Delivery Men</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-16 gap-20 lg:px-24 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-24 gap-20 lg:px-24 px-4">
         {topDeliveryMen.map((deliveryMan, index) => (
           // <div key={index} className="m-4 bg-white p- pt-166 shadow-md rounded-md">
           //   <h3 className="text-lg font-bold">{deliveryMan.name}</h3>

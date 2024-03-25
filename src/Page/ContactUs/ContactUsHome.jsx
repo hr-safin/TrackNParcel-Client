@@ -1,44 +1,16 @@
-import React from "react";
-import NavBar from "../../Shared/NavBar/NavBar";
-import { Helmet } from "react-helmet";
-import "./contact.css";
-const Contact = () => {
-  return (
-    <div>
-      <Helmet>
-        <title>TrackNParcel | Contact Us</title>
-      </Helmet>
-      <NavBar></NavBar>
-      <div className="w-full  ">
-        <section class="bg-white w-full dark:bg-gray-900">
-          <div class="  w-full ">
-            <div
-              className="hero min-h-[60vh] w-full"
-              style={{
-                backgroundImage:
-                  "url(https://images.pexels.com/photos/7706468/pexels-photo-7706468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-              }}
-            >
-              <div className="hero-overlay w-full bg-opacity-40"></div>
-              <div className="hero-content text-center text-neutral-content">
-                <div className="max-w-md">
-                  <h1 className="mb-5 text-5xl font-bold pt-16">Contact Us</h1>
-                </div>
-              </div>
-            </div>
+import React from 'react';
 
+const ContactUsHome = () => {
+    return (
+        <div>
             <section class="bg-white">
-              <div class="container px-6 py-12 mx-auto">
+              <div class="container px-6 py-44 mx-auto">
                 <div>
-                  <p class="font-medium text-green-500 ">
+                  <p class="font-bold text-center text-3xl lg:text-4xl">
                     Contact us
                   </p>
 
-                  <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl ">
-                    Get in touch
-                  </h1>
-
-                  <p class="mt-3 text-gray-500 dark:text-gray-400">
+                  <p class="mt-3 text-gray-600 text-center">
                     Our friendly team would love to hear from you.
                   </p>
                 </div>
@@ -153,11 +125,8 @@ const Contact = () => {
                 </div>
               </div>
             </section>
-          </div>
-        </section>
-      </div>
-    </div>
-  );
+        </div>
+    );
 };
 
-export default Contact;
+export default ContactUsHome;
