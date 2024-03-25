@@ -23,7 +23,7 @@ export default function Footer() {
         
         <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700"/>
 
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div>
                 <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
 
@@ -59,7 +59,7 @@ export default function Footer() {
 
                 <div class="flex flex-col items-start mt-5 space-y-2">
                     <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">+880 768 473 4978</a>
-                    <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">info@merakiui.com</a>
+                    <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500">info@tracknparcel.com</a>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
             
 
-            <p class="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">© Copyright 2023. All Rights Reserved.</p>
+            <p class="mt-4 text-sm text-gray-800 sm:mt-0">© Copyright 2023. All Rights Reserved By TrackNParcel</p>
         </div>
     </div>
     

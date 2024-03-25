@@ -73,7 +73,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className=" lg:px-14 px-4 -mt-10 grid grid-cols-2 md:grid-cols-2 place-items-center lg:grid-cols-4  gap-4 lg:gap-10">
+        <div className=" lg:px-14 px-4 -mt-10 grid grid-cols-2 md:grid-cols-2 place-items-center lg:grid-cols-4  gap-9 lg:gap-10">
           <div className=" flex flex-col items-center gap-4">
             <span className=" text-5xl bg-green-700  text-white py-3 px-5 rounded-md">
               <CiShoppingCart />
