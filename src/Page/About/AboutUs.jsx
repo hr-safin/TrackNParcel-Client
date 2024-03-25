@@ -61,11 +61,11 @@ const AboutUs = () => {
         </div>
       </div>
       <div className=" pt-16">
-        <div className="bg-[#0f172a] px-4 py-20 lg:h-[300px]">
-          <h2 className=" text-4xl text-center text-white ">
+        <div className="bg-gray-300 px-4 py-20 lg:h-[300px]">
+          <h2 className=" text-4xl text-center ">
             How Delivery Works
           </h2>
-          <p className=" text-gray-600 lg:w-[600px] mx-auto py-3 text-center">
+          <p className="  text-gray-800 lg:w-[600px] mx-auto py-3 text-center">
             {" "}
             ordering is simple, and delivery is swift. Once you place your
             order, we handle the rest. Track your parcel in real-time, and our
@@ -74,7 +74,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className=" lg:px-14 px-4 -mt-10 grid grid-cols-2 md:grid-cols-2 place-items-center lg:grid-cols-4  gap-4 lg:gap-10">
+        <div className=" lg:px-14 px-4 -mt-10 grid grid-cols-2 md:grid-cols-2 place-items-center lg:grid-cols-4  gap-8 lg:gap-12">
           <div className=" flex flex-col items-center gap-4">
             <span className=" text-5xl bg-green-700  text-white py-3 px-5 rounded-md">
               <CiShoppingCart />
