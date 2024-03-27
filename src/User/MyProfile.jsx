@@ -36,13 +36,13 @@ const MyProfile = () => {
 //     console.log(file)
 //   }
   return (
-    <div>
-      <div className=" text-4xl text-center font-bold pt-20">
+    <div className="min-h-screen pt-10 md:pt-24">
+      <div className=" text-3xl md:text-4xl text-center font-bold pt-20">
         <h2>My Profile</h2>
       </div>
       <div>
         <div class="">
-          <div class="max-w-lg bg-gray-100 mx-auto my-10 bg-white rounded-lg shadow-md p-5">
+          <div class="max-w-lg bg-gray-200 mx-auto my-10  rounded-lg shadow-md p-5">
             <img
               class="w-32 h-32 rounded-full mx-auto"
               src={user?.photoURL}

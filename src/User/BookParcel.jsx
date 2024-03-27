@@ -95,8 +95,8 @@ const BookParcel = () => {
         
     }
     return (
-        <div>
-            <div className=' text-4xl text-center font-bold pt-8'>
+        <div className=' min-h-screen pt-24 md:pt-36'>
+            <div className=' text-3xl md:text-4xl text-center font-bold pt-8'>
                 <h2>Book A Parcel</h2>
             </div>
             <div className=' max-w-2xl mx-auto pt-10'>

@@ -63,6 +63,11 @@ export default function NavBar2() {
       icon: UserIcon,
     },
     {
+      label: "Dashboard",
+      link: isAdmin ? "/dashboard/adminHome" : "/dashboard/bookParcel", // Add the link to your dashboard route
+      icon: CubeIcon,
+    },
+    {
       label: "Logout",
       onClick: () => handleLogOut(),
       icon: PowerIcon,
@@ -265,7 +270,7 @@ export default function NavBar2() {
 
   return (
     <div className="">
-      <Navbar className="fixed px-4 max-w-8xl lg:px-24 mx-auto bg-white z-10 rounded-none py-0 lg:py-0 shadow-none border-b border-b-gray-300">
+      <Navbar className="fixed px-4 max-w-8xl lg:px-24 mx-auto bg-white z-10 rounded-none py-3 lg:py-3 shadow-none border-b border-b-gray-300">
         <div className="flex flex-row lg:flex-col gap-5 items-center justify-between text-blue-gray-900">
           <div className=" flex items-center gap-2">
             <img className="w-[40px]" src={img} alt="" />
