@@ -95,11 +95,11 @@ const BookParcel = () => {
         
     }
     return (
-        <div className=' min-h-screen pt-24 md:pt-36'>
+        <div className=' min-h-screen pt-20 md:pt-20 lg:pt-32 px-6'>
             <div className=' text-3xl md:text-4xl text-center font-bold pt-8'>
                 <h2>Book A Parcel</h2>
             </div>
-            <div className=' max-w-2xl mx-auto pt-10'>
+            <div className=' max-w-5xl mx-auto pt-10'>
             <div class="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
                 <form  onSubmit={handleSubmit}>
                     <div class="-mx-2 md:items-center md:flex">

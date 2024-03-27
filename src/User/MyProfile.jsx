@@ -36,7 +36,7 @@ const MyProfile = () => {
 //     console.log(file)
 //   }
   return (
-    <div className="min-h-screen pt-10 md:pt-24">
+    <div className="min-h-screen pt-10 md:pt-12 lg:pt-20 px-6">
       <div className=" text-3xl md:text-4xl text-center font-bold pt-20">
         <h2>My Profile</h2>
       </div>
@@ -48,16 +48,17 @@ const MyProfile = () => {
               src={user?.photoURL}
               alt="Profile picture"
             />
-            <form className=" text-center max-w-md py-5" onSubmit={handleSubmit(onSubmit)}>
+            <form className=" text-center  max-w-md py-5" onSubmit={handleSubmit(onSubmit)}>
               {/* Other form fields */}
               <input
+                className=" pl-16 md:pl-0"
                 type="file"
                 {...register("image")}
                 
               />
-              <button className=" px-4 py-2 bg-green-700 text-white rounded-md"  type="submit">Update Profile</button>
+              <button className=" my-4 md:my-4 lg:my-0 px-4 py-2 bg-green-700 text-white rounded-md"  type="submit">Update Profile</button>
             </form>
-            <h2 class="text-center text-2xl font-semibold mt-3">
+            <h2 class="text-center text-2xl font-semibold mt-1">
               {user?.displayName}
             </h2>
             <p class="text-center text-gray-600 mt-1">{user?.email}</p>
