@@ -65,6 +65,7 @@ const Dashboard = () => {
  
   return (
     <div className=" overflow-x-auto">
+      {/* flex gap-6! */}
       <section className="">
       <div
         // className={`bg-[#0f172a]  min-h-screen ${

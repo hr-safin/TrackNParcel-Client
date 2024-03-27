@@ -63,11 +63,6 @@ export default function NavBar2() {
       icon: UserIcon,
     },
     {
-      label: "Dashboard",
-      link: isAdmin ? "/dashboard/adminHome" : "/dashboard", // Add the link to your dashboard route
-      icon: CubeIcon,
-    },
-    {
       label: "Logout",
       onClick: () => handleLogOut(),
       icon: PowerIcon,
@@ -213,46 +208,7 @@ export default function NavBar2() {
         className="p-1 font-normal"
       >
         <NavLink
-          to="/service"
-          className="flex items-center text-gray-900 font-semibold"
-        >
-          Services
-        </NavLink>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink
-          to="/book"
-          className="flex items-center text-gray-900 font-semibold"
-        >
-          Book Now
-        </NavLink>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink
-          to="/team"
-          className="flex items-center text-gray-900 font-semibold"
-        >
-          Our Team
-        </NavLink>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink
-          to="/contact"
+          to="/dashboard/myProfile"
           className={({ isActive }) =>
             `flex items-center ${
               isActive
@@ -261,7 +217,46 @@ export default function NavBar2() {
             }`
           }
         >
-          Contact Us
+          My Profile
+        </NavLink>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <NavLink
+          to="/dashboard/bookParcel"
+          className={({ isActive }) =>
+            `flex items-center ${
+              isActive
+                ? " text-green-600 underline decoration-2 underline-offset-8 font-bold"
+                : "text-gray-900 font-semibold"
+            }`
+          }
+        >
+          Book a Parcel
+        </NavLink>
+        
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <NavLink
+          to="/dashboard/myParcel"
+          className={({ isActive }) =>
+            `flex items-center ${
+              isActive
+                ? " text-green-600 underline decoration-2 underline-offset-8 font-bold"
+                : "text-gray-900 font-semibold"
+            }`
+          }
+        >
+          My Parcel
         </NavLink>
         
       </Typography>
