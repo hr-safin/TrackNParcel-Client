@@ -30,6 +30,7 @@ import useAxiosSecure from "../../Hook/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
 import useAdmin from "../../Hook/useAdmin";
 import useDelivery from "../../Hook/useDelivery";
+import NavBar2 from "../../Shared/NavBar/NavBar2";
 const Dashboard = () => {
  
   const [open, setOpen] = useState(true);
@@ -66,16 +67,16 @@ const Dashboard = () => {
     <div className=" overflow-x-auto">
       <section className="flex gap-6">
       <div
-        className={`bg-[#0f172a]  min-h-screen ${
-          open ? "w-72 fixed z-50 " : "w-16"
-        } duration-500 text-gray-500 px-4`}
+        // className={`bg-[#0f172a]  min-h-screen ${
+        //   open ? "w-72 fixed z-50 " : "w-16"
+        // } duration-500 text-gray-500 px-4`}
       >
         <div className="py-3 flex justify-end">
-          <HiMenuAlt3
+          {/* <HiMenuAlt3
             size={26}
             className="cursor-pointer"
             onClick={() => setOpen(!open)}
-          />
+          /> */}
         </div>
         <div className="mt-4 flex flex-col gap-4 relative">
           {/* {menus?.map((menu, i) => (
@@ -160,38 +161,39 @@ const Dashboard = () => {
            
 
             {!isAdmin && !isDelivery && (
-              <ul>
-                <li class="flex gap-3 items-center px-2 py-2 text-gray-500  rounded-md hover:bg-gray-200 hover:text-gray-800 ">
-                  <span>
-                    <FaUserEdit></FaUserEdit>
-                  </span>
-                  {!open ? (
-                    ""
-                  ) : (
-                    <NavLink to="/dashboard/myProfile">My Profile</NavLink>
-                  )}
-                </li>
-                <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
-                  <span>
-                    <FaBoxOpen></FaBoxOpen>
-                  </span>
-                  {!open ? (
-                    ""
-                  ) : (
-                    <NavLink to="/dashboard/bookParcel">Book a Parcel</NavLink>
-                  )}
-                </li>
-                <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
-                  <span>
-                    <FaBox></FaBox>
-                  </span>
-                  {!open ? (
-                    ""
-                  ) : (
-                    <NavLink to="/dashboard/myParcel">My Parcel</NavLink>
-                  )}
-                </li>
-              </ul>
+              // <ul>
+              //   <li class="flex gap-3 items-center px-2 py-2 text-gray-500  rounded-md hover:bg-gray-200 hover:text-gray-800 ">
+              //     <span>
+              //       <FaUserEdit></FaUserEdit>
+              //     </span>
+              //     {!open ? (
+              //       ""
+              //     ) : (
+              //       <NavLink to="/dashboard/myProfile">My Profile</NavLink>
+              //     )}
+              //   </li>
+              //   <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
+              //     <span>
+              //       <FaBoxOpen></FaBoxOpen>
+              //     </span>
+              //     {!open ? (
+              //       ""
+              //     ) : (
+              //       <NavLink to="/dashboard/bookParcel">Book a Parcel</NavLink>
+              //     )}
+              //   </li>
+              //   <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
+              //     <span>
+              //       <FaBox></FaBox>
+              //     </span>
+              //     {!open ? (
+              //       ""
+              //     ) : (
+              //       <NavLink to="/dashboard/myParcel">My Parcel</NavLink>
+              //     )}
+              //   </li>
+              // </ul>
+              <NavBar2 />
             )}
 
             
@@ -224,7 +226,7 @@ const Dashboard = () => {
             )}
            
 
-            <ul>
+            {/* <ul>
               <li className="flex gap-3 items-center px-2 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800">
                 <FaHome></FaHome>
                 {!open ? (
@@ -257,7 +259,7 @@ const Dashboard = () => {
                     <button className=" hover:text-gray-800 rounded-md   text-white" onClick={handleLogOut}  >Logout</button>
                   )}
               </li>
-            </ul>
+            </ul> */}
           </nav>
         </div>
       </div>
