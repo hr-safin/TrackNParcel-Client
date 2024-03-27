@@ -111,7 +111,8 @@ const MyParcel = () => {
   };
 
   return (
-    <div>
+    <>
+    {parcel.length > 0 ? <div className="min-h-screen pt-20 md:pt-20 lg:pt-32 px-6">
       <div className=" flex justify-center items-center">
         <h2 className=" text-4xl font-bold pt-16">My Parcel</h2>
       </div>
@@ -153,7 +154,7 @@ const MyParcel = () => {
               </tr>
             </thead>
             <tbody>
-            {parcelSearchItem.map((item, index) => (
+            { parcelSearchItem.map((item, index) => (
                 <tr>
                   <th>{index + 1}</th>
                   <td>{item.parcelType}</td>
@@ -354,6 +355,13 @@ const MyParcel = () => {
         </div>
       </div>
     </div>
+    :
+    <div className=" flex min-h-screen text-center justify-center items-center">
+      <h2 className="text-3xl md:text-4xl font-bold">Currently, there are no parcels booked.</h2>
+    </div>
+  }
+    </>
+    
   );
 };
 
