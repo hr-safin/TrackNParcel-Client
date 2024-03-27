@@ -65,13 +65,13 @@ const Dashboard = () => {
  
   return (
     <div className=" overflow-x-auto">
-      <section className="flex gap-6">
+      <section className="">
       <div
         // className={`bg-[#0f172a]  min-h-screen ${
         //   open ? "w-72 fixed z-50 " : "w-16"
         // } duration-500 text-gray-500 px-4`}
       >
-        <div className="py-3 flex justify-end">
+        <div className="py-0 flex justify-end">
           {/* <HiMenuAlt3
             size={26}
             className="cursor-pointer"
@@ -263,7 +263,7 @@ const Dashboard = () => {
           </nav>
         </div>
       </div>
-      <div className={`${open ? "px-6  " : ""} flex-1`}>
+      <div>
        <Outlet></Outlet>
         
       </div>
