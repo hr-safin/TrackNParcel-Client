@@ -6,7 +6,7 @@ const PaymentSuccess = () => {
     const { width, height } = useWindowSize()
   return (
     <div>
-        <div className=" flex text-5xl justify-center items-center h-[80vh]">
+        <div className=" flex text-center w-full text-3xl md:text-4xl lg:text-5xl justify-center items-center h-[100vh]">
             Payment Successful
         </div>
       <Confetti width={width} height={height} />

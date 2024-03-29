@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect, useRef } from 'react';
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 import 'sweetalert2/src/sweetalert2.scss';
@@ -11,6 +11,7 @@ const CheckOutForm = () => {
   const [error, setError] = useState("");
   const [clientSecret, setClientSecret] = useState("");
   const [transactionId, setTransactionId] = useState("");
+  const formRef = useRef(null)
   const navigate = useNavigate();
   const axiosSecure = useAxiosSecure();
   const stripe = useStripe();
@@ -134,30 +135,59 @@ const CheckOutForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <CardElement
-          options={{
-            style: {
-              base: {
-                fontSize: '16px',
-                color: '#424770',
-                '::placeholder': {
-                  color: '#aab7c4',
-                },
-              },
-              invalid: {
-                color: '#9e2146',
+    <form
+      ref={formRef}
+      className=" shadow-lg h-[295px] p-7 border rounded-md"
+      onSubmit={handleSubmit}
+    >
+      <div>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          className=" mb-5 outline-none border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  "
+          placeholder="Your name"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          defaultValue={user?.email}
+          className=" mb-5 outline-none border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  "
+          placeholder="Email address"
+          required
+        />
+      </div>
+      <CardElement
+        className="  outline-none border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+        options={{
+          style: {
+            base: {
+              fontSize: "16px",
+              color: "#424770",
+              "::placeholder": {
+                color: "#aab7c4",
               },
             },
-          }}
-        />
-        <button className='btn btn-sm bg-green-600 text-white my-6 w-full' type="submit" disabled={!stripe || !clientSecret}>
-          Pay
-        </button>
-        <p className='text-red-600 '>{error}</p>
-        {transactionId && <p className='text-green-600'>Your Transaction Id: {transactionId}</p>}
-      </form>
-    </div>
+            invalid: {
+              color: "#9e2146",
+            },
+          },
+        }}
+      />
+      <button
+        className="flex items-center gap-2 justify-center bg-green-600 hover:bg-green-500  mt-6 px-4 py-2 rounded-md w-full text-white"
+        type="submit"
+        disabled={!stripe || !clientSecret}
+      >
+        Pay 
+      </button>
+      <p className=" pt-2 text-sm text-red-600">{error}</p>
+    </form>
+  </div>
   );
 };
 

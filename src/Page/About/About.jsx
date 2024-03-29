@@ -6,7 +6,8 @@ import { MdPayments } from "react-icons/md";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { FaBoxOpen } from "react-icons/fa";
 import { Helmet } from "react-helmet";
-import Statistic from "../Home/statistic";
+import Statistic from "../Home/Statistic";
+
 const About = () => {
   return (
     <>
@@ -57,7 +58,7 @@ const About = () => {
         </div>
       </div>
       <div className=" pt-16 xl:pt-32">
-      <Statistic />
+      <Statistic/>
       </div>
       <div className=" pt-16">
         <div className="bg-gray-300 px-4 py-20 lg:h-[300px]">

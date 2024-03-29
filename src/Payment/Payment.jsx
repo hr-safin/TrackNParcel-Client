@@ -15,9 +15,9 @@ const Payment = () => {
    console.log(id)
      
     return (
-        <div className=' h-[60vh] flex flex-col justify-center max-w-lg mx-auto'>
+        <div className=' h-[100vh] pt-10 flex flex-col justify-center max-w-lg mx-auto'>
             <div className=' flex justify-center items-center '>
-                <h2 className=' text-3xl font-bold pb-16 '>Payment</h2>
+                <h2 className=' text-4xl font-bold pb-16 '>Payment</h2>
             </div>
             <div  className=''>
                <Elements stripe={stripePromise}>
