@@ -34,11 +34,13 @@ import Container from "../../Component/Container/Container";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-hot-toast";
 import useAdmin from "../../Hook/useAdmin";
+import useDelivery from "../../Hook/useDelivery";
 export default function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
   const { user, logOut } = useContext(AuthContext);
 
-  const [isAdmin] = useAdmin()
+  const [isAdmin] = useAdmin();
+  const [isDelivery] = useDelivery()
 
   const userName = user?.displayName;
   const handleLogOut = () => {
@@ -82,29 +84,25 @@ export default function NavBar() {
     return (
       <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
         <MenuHandler>
-          <div
-            
-            className="flex active:bg-green-200 flex-row cursor-pointer justify-center items-center gap-1 rounded-full py-1 pr-6 pl-1 lg:ml-auto"
-          >  
-          <div>
-          <Avatar
-              variant="circular"
-              size="sm"
-              alt="tania andrew"
-              className="border border-gray-900 p-0.5"
-              src={user?.email ? user?.photoURL : ""}
-            />
-          </div>
-            
-            <div className=" -mr-5"> 
-              <ChevronDownIcon
-              strokeWidth={3}
-              className={`h-3 w-3 text-gray-800 font-bold transition-transform ${
-                isMenuOpen ? "rotate-180" : ""
-              }`}
-            />
+          <div className="flex active:bg-green-200 flex-row cursor-pointer justify-center items-center gap-1 rounded-full py-1 pr-6 pl-1 lg:ml-auto">
+            <div>
+              <Avatar
+                variant="circular"
+                size="sm"
+                alt="tania andrew"
+                className="border border-gray-900 p-0.5"
+                src={user?.email ? user?.photoURL : ""}
+              />
             </div>
-            
+
+            <div className=" -mr-5">
+              <ChevronDownIcon
+                strokeWidth={3}
+                className={`h-3 w-3 text-gray-800 font-bold transition-transform ${
+                  isMenuOpen ? "rotate-180" : ""
+                }`}
+              />
+            </div>
           </div>
         </MenuHandler>
         <MenuList className="p-1">
@@ -219,19 +217,22 @@ export default function NavBar() {
           Services
         </NavLink>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink
-          to="/book"
-          className="flex items-center text-gray-900 font-semibold"
+      {!isAdmin && !isDelivery && (
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal"
         >
-          Book Now
-        </NavLink>
-      </Typography>
+          <NavLink
+            to="/dashboard/bookParcel"
+            className="flex items-center text-gray-900 font-semibold"
+          >
+            Book Now
+          </NavLink>
+        </Typography>
+      )}
+
       <Typography
         as="li"
         variant="small"
@@ -263,7 +264,6 @@ export default function NavBar() {
         >
           Contact Us
         </NavLink>
-        
       </Typography>
     </ul>
   );
@@ -337,9 +337,8 @@ export default function NavBar() {
         </div>
         <MobileNav className=" " open={openNav}>
           {navList}
-          
+
           <div className="flex w-full items-center gap-x-1 ">
-          
             {user?.email || (
               <Link to="/signIn">
                 <button

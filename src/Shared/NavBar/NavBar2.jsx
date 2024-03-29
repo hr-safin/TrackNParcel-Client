@@ -34,11 +34,13 @@ import Container from "../../Component/Container/Container";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-hot-toast";
 import useAdmin from "../../Hook/useAdmin";
+import useDelivery from "../../Hook/useDelivery";
 export default function NavBar2() {
   const [openNav, setOpenNav] = React.useState(false);
   const { user, logOut } = useContext(AuthContext);
 
   const [isAdmin] = useAdmin()
+  const [isDelivery] = useDelivery()
 
   const userName = user?.displayName;
   const handleLogOut = () => {
