@@ -5,7 +5,6 @@ import "./style.css";
 import image from "./image.gif";
 import { Helmet } from "react-helmet";
 import FeatureSection from "./FeatureSection";
-import Statistic from "./statistic";
 import TopDeliveryMen from "./TopDeliveryMen";
 import About from "../About/About";
 import ContactUsHome from "../ContactUs/ContactUsHome";
