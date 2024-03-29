@@ -94,7 +94,7 @@ const SignUp = () => {
   };
   return (
     <div>
-      <section class=" pt-10  w-full">
+      <section class="sm:pt-14 md:pt-24 w-full">
         <div class="flex flex-col items-center py-20 justify-center px-6  mx-auto md:h-screen lg:py-0 w-[100%] lg:w-[90%]">
           <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-6">
@@ -105,7 +105,7 @@ const SignUp = () => {
                 onSubmit={handleSubmit(onSubmit)}
                 class="space-y-4 md:space-y-6"
               >
-                <div className=" flex lg:gap-0 gap-5 justify-between lg:flex-row flex-col lg:items-center">
+                <div className=" flex lg:gap-0 gap-5 justify-between md:flex-row flex-col lg:items-center">
                   <div>
                     <label
                       for="name"
@@ -195,7 +195,7 @@ const SignUp = () => {
                     </p>
                   )}
                 </div>
-                <div className=" flex lg:gap-0 gap-5 justify-between lg:flex-row flex-col lg:items-center">
+                <div className=" flex lg:gap-0 gap-5 justify-between md:flex-row flex-col lg:items-center">
                   <div>
                   <label
                     for="photo"
@@ -281,7 +281,7 @@ const SignUp = () => {
                 </div>
                 <button
                   type="submit"
-                  class="w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  class="w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                 >
                   Create an account
                 </button>
@@ -292,7 +292,7 @@ const SignUp = () => {
                   <div className=" border w-56 border-gray-300"></div>
                 </div>
 
-                <div className=" space-y-2 lg:py-1">
+                <div className=" space-y-2 lg:py-0">
                   <button
                     onClick={handleGoogle}
                     type="button"
@@ -310,7 +310,7 @@ const SignUp = () => {
                     </span>
                     Sign In with Google
                   </button>
-                  <p class="text-sm font-light text-gray-700 dark:text-gray-400">
+                  <p class="text-sm pt-2 font-light text-gray-500 ">
                     Already have an account?{" "}
                     <Link
                       to="/signIn"

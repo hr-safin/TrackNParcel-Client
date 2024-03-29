@@ -62,7 +62,7 @@ const SignIn = () => {
     <div className="">
       <section className=" h-screen flex justify-center items-center">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-24 w-full lg:w-[90%]">
-          <div className="w-[95%] pt-10 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
+          <div className="w-[95%]  bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-2xl text-center font-bold leading-tight tracking-tight pb-3 text-gray-900 md:text-3xl dark:text-white">
                 Sign In
@@ -131,9 +131,9 @@ const SignIn = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="w-full text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-base px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                 >
-                  Login
+                  Sign In
                 </button>
 
                 <div className=" flex items-center w-full gap-4">
@@ -161,11 +161,11 @@ const SignIn = () => {
                     Sign In with Google
                   </button>
                 </div>
-                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-light text-gray-500 ">
                   Don’t have an account yet?{" "}
                   <Link
                     to="/signUp"
-                    className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                    className=" font-medium text-gray-800 hover:underline dark:text-primary-500"
                   >
                     Sign up
                   </Link>
