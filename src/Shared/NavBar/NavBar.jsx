@@ -66,7 +66,7 @@ export default function NavBar() {
     },
     {
       label: "Dashboard",
-      link: isAdmin ? "/dashboard/adminHome" : "/dashboard", // Add the link to your dashboard route
+      link: isAdmin ? "/dashboard/adminHome" : isDelivery ? "/dashboard/deliveryList" : "/dashboard/myProfile", // Add the link to your dashboard route
       icon: CubeIcon,
     },
     {

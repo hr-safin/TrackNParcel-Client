@@ -64,11 +64,11 @@ export default function NavBar3() {
       label: userName,
       icon: UserIcon,
     },
-    {
-      label: "Dashboard",
-      link: isAdmin ? "/dashboard/adminHome" : "/dashboard/bookParcel", // Add the link to your dashboard route
-      icon: CubeIcon,
-    },
+    // {
+    //   label: "Dashboard",
+    //   link: isAdmin ? "/dashboard/adminHome" : "/dashboard/bookParcel", // Add the link to your dashboard route
+    //   icon: CubeIcon,
+    // },
     {
       label: "Logout",
       onClick: () => handleLogOut(),
