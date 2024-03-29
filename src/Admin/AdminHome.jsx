@@ -21,9 +21,9 @@ const AdminHome = () => {
     colors: ['#008000'],
   };
   return (
-    <div>
-      <div className=" text-4xl text-center font-bold pt-8">
-        <h2>Admin Home</h2>
+    <div className="px-4 lg:px-24">
+      <div className=" text-3xl md:text-4xl text-center font-bold pt-28 lg:pt-44">
+        <h2>Statistics</h2>
       </div>
       <div className=" flex justify-center items-center h-[70vh]">
         <Chart

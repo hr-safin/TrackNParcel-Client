@@ -79,9 +79,9 @@ const AllUser = () => {
   
 
   return (
-    <div>
-      <div className="flex justify-center text-center pt-16 items-center">
-        <h2 className=" text-center text-3xl font-bold pb-10" >All User</h2>
+    <div className="px-4 lg:px-24">
+      <div className="flex justify-center text-center pt-28 lg:pt-44 items-center">
+        <h2 className=" text-center text-3xl md:text-4xl font-bold pb-10" >All User</h2>
       </div>
 
       <div className="overflow-x-auto mx-auto w-full lg:px-20">

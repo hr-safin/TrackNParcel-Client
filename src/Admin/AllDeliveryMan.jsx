@@ -14,8 +14,8 @@ const AllDeliveryMan = () => {
   });
 
   return (
-    <div>
-      <div className="text-4xl text-center font-bold pt-20">
+    <div className="px-4 lg:px-24">
+      <div className=" text-3xl md:text-4xl text-center font-bold pt-28 lg:pt-44">
         <h2>All DeliveryMen</h2>
       </div>
 

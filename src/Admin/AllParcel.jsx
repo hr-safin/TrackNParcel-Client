@@ -79,12 +79,12 @@ const AllParcel = () => {
   
 
   return (
-    <div>
-      <div className="text-4xl text-center font-bold pt-20">
+    <div className="px-4 lg:px-32">
+      <div className="text-3xl md:text-4xl text-center font-bold pt-28 lg:pt-44">
         <h2>All Parcel</h2>
       </div>
-      <div className="pt-10 lg:px-16">
-        <div className="overflow-x-auto">
+      <div className="pt-5">
+        <div className="overflow-x-auto max-w-7xl">
           {/* Add date range inputs */}
           <div className="flex gap-4 mb-4">
             <input

@@ -34,7 +34,7 @@ const MyReview = () => {
 
   return (
     <div>
-      <div className=' flex justify-center items-center font-bold text-4xl pt-16'>
+      <div className=' h-[90vh] flex justify-center items-center font-bold text-4xl pt-16'>
       <h1>My Reviews</h1>
       </div>
 
