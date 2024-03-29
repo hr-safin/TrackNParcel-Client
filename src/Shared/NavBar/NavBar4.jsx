@@ -35,11 +35,11 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-hot-toast";
 import useAdmin from "../../Hook/useAdmin";
 import useDelivery from "../../Hook/useDelivery";
-export default function NavBar() {
+export default function NavBar4() {
   const [openNav, setOpenNav] = React.useState(false);
   const { user, logOut } = useContext(AuthContext);
 
-  const [isAdmin] = useAdmin();
+  const [isAdmin] = useAdmin()
   const [isDelivery] = useDelivery()
 
   const userName = user?.displayName;
@@ -66,7 +66,7 @@ export default function NavBar() {
     },
     {
       label: "Dashboard",
-      link: isAdmin ? "/dashboard/adminHome" : "/dashboard", // Add the link to your dashboard route
+      link: isAdmin ? "/dashboard/adminHome" : "/dashboard/bookParcel", // Add the link to your dashboard route
       icon: CubeIcon,
     },
     {
@@ -84,25 +84,29 @@ export default function NavBar() {
     return (
       <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
         <MenuHandler>
-          <div className="flex active:bg-green-200 flex-row cursor-pointer justify-center items-center gap-1 rounded-full py-1 pr-6 pl-1 lg:ml-auto">
-            <div>
-              <Avatar
-                variant="circular"
-                size="sm"
-                alt="tania andrew"
-                className="border border-gray-900 p-0.5"
-                src={user?.email ? user?.photoURL : ""}
-              />
-            </div>
-
-            <div className=" -mr-5">
+          <div
+            
+            className="flex active:bg-green-200 flex-row cursor-pointer justify-center items-center gap-1 rounded-full py-1 pr-6 pl-1 lg:ml-auto"
+          >  
+          <div>
+          <Avatar
+              variant="circular"
+              size="sm"
+              alt="tania andrew"
+              className="border border-gray-900 p-0.5"
+              src={user?.email ? user?.photoURL : ""}
+            />
+          </div>
+            
+            <div className=" -mr-5"> 
               <ChevronDownIcon
-                strokeWidth={3}
-                className={`h-3 w-3 text-gray-800 font-bold transition-transform ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
+              strokeWidth={3}
+              className={`h-3 w-3 text-gray-800 font-bold transition-transform ${
+                isMenuOpen ? "rotate-180" : ""
+              }`}
+            />
             </div>
+            
           </div>
         </MenuHandler>
         <MenuList className="p-1">
@@ -204,20 +208,7 @@ export default function NavBar() {
           About
         </NavLink>
       </Typography>
-      {isDelivery && <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink
-          to="/dashboard/deliveryList"
-          className="flex items-center text-gray-900 font-semibold"
-        >
-          Dashboard
-        </NavLink>
-      </Typography>}
-      {isAdmin && <Typography
+      <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -225,63 +216,6 @@ export default function NavBar() {
       >
         <NavLink
           to="/dashboard/adminHome"
-          className="flex items-center text-gray-900 font-semibold"
-        >
-          Dashboard
-        </NavLink>
-      </Typography>}
-      
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink
-          to="/service"
-          className="flex items-center text-gray-900 font-semibold"
-        >
-          Services
-        </NavLink>
-      </Typography>
-      {!isAdmin && !isDelivery && (
-        <Typography
-          as="li"
-          variant="small"
-          color="blue-gray"
-          className="p-1 font-normal"
-        >
-          <NavLink
-            to="/dashboard/bookParcel"
-            className="flex items-center text-gray-900 font-semibold"
-          >
-            Book Now
-          </NavLink>
-        </Typography>
-      )}
-
-
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink
-          to="/team"
-          className="flex items-center text-gray-900 font-semibold"
-        >
-          Our Team
-        </NavLink>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <NavLink
-          to="/contact"
           className={({ isActive }) =>
             `flex items-center ${
               isActive
@@ -290,19 +224,80 @@ export default function NavBar() {
             }`
           }
         >
-          Contact Us
+          Statistics
         </NavLink>
       </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <NavLink
+          to="/dashboard/allParcel"
+          className={({ isActive }) =>
+            `flex items-center ${
+              isActive
+                ? " text-green-600 underline decoration-2 underline-offset-8 font-bold"
+                : "text-gray-900 font-semibold"
+            }`
+          }
+        >
+         All Parcel
+        </NavLink>
+        
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <NavLink
+          to="/dashboard/allUser"
+          className={({ isActive }) =>
+            `flex items-center ${
+              isActive
+                ? " text-green-600 underline decoration-2 underline-offset-8 font-bold"
+                : "text-gray-900 font-semibold"
+            }`
+          }
+        >
+         All User
+        </NavLink>
+        
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <NavLink
+          to="/dashboard/allDeliveryMen"
+          className={({ isActive }) =>
+            `flex items-center ${
+              isActive
+                ? " text-green-600 underline decoration-2 underline-offset-8 font-bold"
+                : "text-gray-900 font-semibold"
+            }`
+          }
+        >
+         All Delivery Man
+        </NavLink>
+        
+      </Typography>
+      
     </ul>
   );
 
   return (
     <div className="">
-      <Navbar className="fixed px-4 max-w-8xl lg:px-24 mx-auto bg-white z-10 rounded-none py-4 lg:py-5 shadow-none border-b border-b-gray-300">
-        <div className="flex items-center justify-between text-blue-gray-900">
+      <Navbar className="fixed px-4 max-w-8xl lg:px-24 mx-auto bg-white z-10 rounded-none py-3 lg:py-3 shadow-none border-b border-b-gray-300">
+        <div className="flex flex-row lg:flex-col gap-5 items-center justify-between text-blue-gray-900">
           <div className=" flex items-center gap-2">
             <img className="w-[40px]" src={img} alt="" />
-            <h2 className="mr-4 text-2xl font-bold cursor-pointer">
+            <h2 className="mr-4 text-2xl lg:text-3xl font-bold cursor-pointer">
               TrackNParcel
             </h2>
           </div>
@@ -365,8 +360,9 @@ export default function NavBar() {
         </div>
         <MobileNav className=" " open={openNav}>
           {navList}
-
+          
           <div className="flex w-full items-center gap-x-1 ">
+          
             {user?.email || (
               <Link to="/signIn">
                 <button

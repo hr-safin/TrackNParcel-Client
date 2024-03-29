@@ -32,6 +32,7 @@ import useAdmin from "../../Hook/useAdmin";
 import useDelivery from "../../Hook/useDelivery";
 import NavBar2 from "../../Shared/NavBar/NavBar2";
 import NavBar3 from "../../Shared/NavBar/Navbar3";
+import NavBar4 from "../../Shared/NavBar/NavBar4";
 const Dashboard = () => {
  
   const [open, setOpen] = useState(true);
@@ -112,52 +113,53 @@ const Dashboard = () => {
 
           <nav>
             {isAdmin && (
-              <ul>
-                <li class="flex gap-3 items-center px-2 py-2  text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
-                  <span>
-                  <IoStatsChart />
-                  </span>
+              // <ul>
+              //   <li class="flex gap-3 items-center px-2 py-2  text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
+              //     <span>
+              //     <IoStatsChart />
+              //     </span>
 
-                  {!open ? (
-                    ""
-                  ) : (
-                    <NavLink to="/dashboard/adminHome">Statistics</NavLink>
-                  )}
-                </li>
-                <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
-                  <span>
-                    <FaBox></FaBox>
-                  </span>
-                  {!open ? (
-                    ""
-                  ) : (
-                    <NavLink to="/dashboard/allParcel">All Parcel</NavLink>
-                  )}
-                </li>
-                <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
-                  <span>
-                    <FaUser></FaUser>
-                  </span>
-                  {!open ? (
-                    ""
-                  ) : (
-                    <NavLink to="/dashboard/allUser">All User</NavLink>
-                  )}
-                </li>
-                <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
-                  <span>
-                    <FaUsers></FaUsers>
-                  </span>
-                  {!open ? (
-                    ""
-                  ) : (
-                    <NavLink to="/dashboard/allDeliveryMen">
-                      All Delivery Man
-                    </NavLink>
-                  )}
-                </li>
-                <hr class="my-6 border-gray-200 " />
-              </ul>
+              //     {!open ? (
+              //       ""
+              //     ) : (
+              //       <NavLink to="/dashboard/adminHome">Statistics</NavLink>
+              //     )}
+              //   </li>
+              //   <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
+              //     <span>
+              //       <FaBox></FaBox>
+              //     </span>
+              //     {!open ? (
+              //       ""
+              //     ) : (
+              //       <NavLink to="/dashboard/allParcel">All Parcel</NavLink>
+              //     )}
+              //   </li>
+              //   <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
+              //     <span>
+              //       <FaUser></FaUser>
+              //     </span>
+              //     {!open ? (
+              //       ""
+              //     ) : (
+              //       <NavLink to="/dashboard/allUser">All User</NavLink>
+              //     )}
+              //   </li>
+              //   <li class="flex gap-3 items-center px-2 py-2 mt-5 text-gray-500 transition-colors duration-300 transform rounded-md hover:bg-gray-200 hover:text-gray-800 ">
+              //     <span>
+              //       <FaUsers></FaUsers>
+              //     </span>
+              //     {!open ? (
+              //       ""
+              //     ) : (
+              //       <NavLink to="/dashboard/allDeliveryMen">
+              //         All Delivery Man
+              //       </NavLink>
+              //     )}
+              //   </li>
+              //   <hr class="my-6 border-gray-200 " />
+              // </ul>
+              <NavBar4 />
             )}
 
            
