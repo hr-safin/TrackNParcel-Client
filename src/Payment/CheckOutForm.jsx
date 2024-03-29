@@ -107,7 +107,8 @@ const CheckOutForm = () => {
               price: totalPrice,
               transactionId: paymentIntent.id,
               date: new Date(),
-              payment : "paid"
+              payment : "paid",
+              status : "paid"
             };
 
             axiosSecure.put(`/payments/${id}`, paymentInfo)
