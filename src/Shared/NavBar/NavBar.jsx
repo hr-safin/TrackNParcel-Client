@@ -211,10 +211,10 @@ export default function NavBar() {
         className="p-1 font-normal"
       >
         <NavLink
-          to="/service"
+          to="/dashboard/deliveryList"
           className="flex items-center text-gray-900 font-semibold"
         >
-          Services
+          Dashboard
         </NavLink>
       </Typography>
       <Typography

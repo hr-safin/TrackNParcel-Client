@@ -71,11 +71,11 @@ const MyDeliveryList = () => {
    })
   }
   return (
-    <div className="overflow-x-auto">
-      <div className=" text-4xl text-center font-bold pt-8">
+    <div className="overflow-x-auto px-4 lg:px-24">
+      <div className="text-3xl md:text-4xl text-center font-bold pt-28 lg:pt-44">
         <h2>My Delivery List</h2>
       </div>
-      <div className=" pt-16 overflow-hidden max-w-full">
+      <div className=" pt-12 overflow-hidden max-w-full">
         <div className="overflow-x-auto w-full">
           <table className="table w-full">
             {/* head */}

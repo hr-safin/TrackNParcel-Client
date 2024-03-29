@@ -27,7 +27,7 @@ const MyReview = () => {
   }, [axiosPublic, user]);
 
   if (loading) {
-    return <p className=' flex justify-center items-center text-4xl font-bold pt-16'>No Review Yet</p>;
+    return <p className=' h-[90vh] flex justify-center items-center text-4xl font-bold pt-16'>Not yet reviewed</p>;
   }
 
   
