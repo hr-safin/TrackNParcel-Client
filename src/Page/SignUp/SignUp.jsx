@@ -96,10 +96,10 @@ const SignUp = () => {
     <div>
       <section class=" pt-10  w-full">
         <div class="flex flex-col items-center py-20 justify-center px-6  mx-auto md:h-screen lg:py-0 w-[100%] lg:w-[90%]">
-          <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-lg xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+          <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-6">
-              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-3xl text-center dark:text-white">
-                Create Your Account
+              <h1 class="text-2xl font-bold leading-tight tracking-tight text-gray-900 md:text-3xl text-center dark:text-white">
+                Sign Up
               </h1>
               <form
                 onSubmit={handleSubmit(onSubmit)}
