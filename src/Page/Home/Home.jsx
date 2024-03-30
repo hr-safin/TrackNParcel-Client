@@ -8,7 +8,7 @@ import FeatureSection from "./FeatureSection";
 import TopDeliveryMen from "./TopDeliveryMen";
 import About from "../About/About";
 import ContactUsHome from "../ContactUs/ContactUsHome";
-
+import "./home.css"
 const Home = () => {
   return (
     <>
@@ -19,22 +19,18 @@ const Home = () => {
         <NavBar />
 
         <div
-          className="hero min-h-screen"
-          style={{
-            backgroundImage:
-              "url(https://demo.cmssuperheroes.com/themeforest/primous/wp-content/uploads/slider1.jpg)",
-          }}
+          className="heroo"
         >
-          <div className="hero-overlay bg-opacity-50"></div>
-          <div className="hero-content text-center text-neutral-content">
+          <div className="hero-overlayy bg-opacity-40"></div>
+          <div className="hero-contentt text-center text-neutral-content">
             <div className="max-w-3xl pt-10">
               <div className="  ">
-                <h2 className=" text-5xl text-white  font-bold pb-5 pt-4">
+                <h2 className=" text-4xl w-[350px] mx-auto md:w-full md:text-4xl lg:text-5xl text-white  font-bold pb-5 pt-4">
                   Reliable Service Every Time
                 </h2>
 
-                <p className=" text-gray-300 pb-7 font-bold text-4xl">
-                  Effortless tracking and easy organization.
+                <p className=" text-gray-100  w-[350px] mx-auto md:w-full text-base pb-7 font-bold">
+                Welcome to TrackNParcel, your comprehensive parcel management solution. Whether you're a small business or a large corporation, our platform simplifies parcel handling. From real-time tracking to optimized delivery routes, tracNparcel saves you time and ensures secure, on-time deliveries.
                 </p>
 
                 <form className=" w-full md:w-[70%] mx-auto">

@@ -1,0 +1,23 @@
+.heroo {
+    min-height: 100vh;
+    background-image: url(https://demo.cmssuperheroes.com/themeforest/primous/wp-content/uploads/slider1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .hero-overlayy {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(22, 22, 22, 0.4); /* Adjust opacity as needed */
+  }
+  
+  .hero-contentt {
+    z-index: 1;
+    text-align: center;
+    color: #ffffff; /* Set text color to white */
+  }
+  
