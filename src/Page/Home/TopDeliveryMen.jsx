@@ -29,9 +29,9 @@ const TopDeliveryMen = () => {
           //   <p className="mt-2">Parcels Delivered: {deliveryMan.deliveredCount}</p>
           //   <p>Average Rating: {deliveryMan.averageReview}</p>
           // </div>
-          <div class="w-full max-w-md overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+          <div class="w-full h-auto max-w-md overflow-hidden bg-white rounded-lg shadow-lg ">
             <img
-              class="object-cover w-full h-56"
+              class="object-cover w-full max-h-[380px]"
               src={deliveryMan.image}
               alt="avatar"
             />
