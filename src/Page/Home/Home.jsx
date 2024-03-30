@@ -8,6 +8,7 @@ import FeatureSection from "./FeatureSection";
 import TopDeliveryMen from "./TopDeliveryMen";
 import About from "../About/About";
 import ContactUsHome from "../ContactUs/ContactUsHome";
+import "./home.css"
 
 const Home = () => {
   return (

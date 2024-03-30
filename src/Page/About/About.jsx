@@ -14,7 +14,6 @@ const About = () => {
       <Helmet>
         <title>TrackNParcel | About Us</title>
       </Helmet>
-      <NavBar />
       <div className="w-full  mx-auto">
         <div
           className="hero min-h-[30vh]"
@@ -28,7 +27,7 @@ const About = () => {
 
         <div className=" bg-white lg:px-20 md:px-10 px-4 lg:my-10  my-0 mb-20  flex flex-col lg:flex-row justify-center gap-20 lg:ga-40 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl text-center lg:text-left  lg:text-5xl font-bold text-gray-900">
+            <h2 className=" w-[300px] mx-auto sm:mx-0 sm:w-full  text-3xl md:text-4xl text-center lg:text-left  lg:text-5xl font-bold text-gray-900">
               Best Service To Deliver Your Needs
             </h2>
             <p className=" text-gray-600 lg:text-left text-center lg:w-[500px] pt-6 pb-6">
