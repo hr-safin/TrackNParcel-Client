@@ -7,7 +7,7 @@ export default function Footer() {
       {/*    <!-- Component: Dark Theme Footer --> */}
       <footer class="bg-white mt-20">
     <div class="container px-6 py-12 mx-auto">
-        <div class="md:flex md:-mx-3 md:items-center md:justify-between">
+        {/* <div class="md:flex md:-mx-3 md:items-center md:justify-between">
             <h1 class="text-xl font-semibold tracking-tight text-gray-800 md:mx-3 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
             
             <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
@@ -19,7 +19,7 @@ export default function Footer() {
                     </svg>
                 </Link>
             </div>
-        </div>
+        </div> */}
         
         <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700"/>
 
