@@ -1,18 +1,24 @@
 .heroo {
     min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heroo-background {
+    position: absolute;
+    inset: 0;
     background-image: url(https://demo.cmssuperheroes.com/themeforest/primous/wp-content/uploads/slider1.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    filter: blur(3px); /* Adjust blur amount as needed */
   }
   
   .hero-overlayy {
     position: absolute;
     inset: 0;
-    background-color: rgba(22, 22, 22, 0.4); /* Adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
   }
   
   .hero-contentt {

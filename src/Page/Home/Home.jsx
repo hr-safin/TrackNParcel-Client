@@ -8,7 +8,7 @@ import FeatureSection from "./FeatureSection";
 import TopDeliveryMen from "./TopDeliveryMen";
 import About from "../About/About";
 import ContactUsHome from "../ContactUs/ContactUsHome";
-import "./home.css"
+
 const Home = () => {
   return (
     <>
@@ -18,19 +18,18 @@ const Home = () => {
       <div>
         <NavBar />
 
-        <div
-          className="heroo"
-        >
+        <div className="heroo">
+          <div className="heroo-background"></div>
           <div className="hero-overlayy bg-opacity-40"></div>
           <div className="hero-contentt text-center text-neutral-content">
             <div className="max-w-3xl pt-10">
               <div className="  ">
-                <h2 className=" text-4xl w-[350px] mx-auto md:w-full md:text-4xl lg:text-5xl text-white  font-bold pb-5 pt-4">
+                <h2 className=" tracking-wider text-4xl w-[350px] mx-auto md:w-full md:text-4xl lg:text-5xl text-white  font-extrabold pb-5 pt-4">
                   Reliable Service Every Time
                 </h2>
 
-                <p className=" text-gray-100  w-[350px] mx-auto md:w-full text-base pb-7 font-bold">
-                Welcome to TrackNParcel, your comprehensive parcel management solution. Whether you're a small business or a large corporation, our platform simplifies parcel handling. From real-time tracking to optimized delivery routes, tracNparcel saves you time and ensures secure, on-time deliveries.
+                <p className="tracking-wider text-white  w-[350px] mx-auto md:w-full text-base pb-7 font-bold">
+                Welcome to TrackNParcel, your complete parcel solution. From tracking to delivery, we ensure efficiency and security for all businesses.
                 </p>
 
                 <form className=" w-full md:w-[70%] mx-auto">
