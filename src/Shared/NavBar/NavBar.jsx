@@ -231,7 +231,7 @@ export default function NavBar() {
         </NavLink>
       </Typography>}
       
-      <Typography
+      {/* <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -243,7 +243,7 @@ export default function NavBar() {
         >
           Services
         </NavLink>
-      </Typography>
+      </Typography> */}
       {!isAdmin && !isDelivery && (
         <Typography
           as="li"
@@ -260,7 +260,7 @@ export default function NavBar() {
         </Typography>
       )}
 
-
+{/* 
       <Typography
         as="li"
         variant="small"
@@ -273,7 +273,7 @@ export default function NavBar() {
         >
           Our Team
         </NavLink>
-      </Typography>
+      </Typography> */}
       <Typography
         as="li"
         variant="small"
