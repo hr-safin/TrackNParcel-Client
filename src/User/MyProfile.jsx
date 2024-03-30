@@ -6,6 +6,11 @@ import { getAuth, updateProfile } from "firebase/auth";
 import { app } from "../Firebase/firebase.config";
 
 const MyProfile = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   const { user, setUser } = useContext(AuthContext);
   const axiosPublic = useAxiosPublic();
   const image_hosting_key = "7db36bb09d61203fe2df5395815077ff";

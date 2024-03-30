@@ -3,6 +3,11 @@ import NavBar from "../../Shared/NavBar/NavBar";
 import { Helmet } from "react-helmet";
 import "./contact.css";
 const Contact = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
   return (
     <div>
       <Helmet>

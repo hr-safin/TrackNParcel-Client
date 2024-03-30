@@ -5,6 +5,11 @@ import { toast } from "react-hot-toast";
 import useAxiosPublic from "../../Hook/useAxiosPublic";
 
 const SignIn = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   const axiosPublic = useAxiosPublic();
 
   const { user, signIn, googleLogin } = useContext(AuthContext);

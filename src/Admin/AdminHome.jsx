@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
 import useAxiosSecure from "../Hook/useAxiosSecure";
 const AdminHome = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   const axiosSecure = useAxiosSecure();
   const [bookingDate, setBookingDate] = useState([]);
 

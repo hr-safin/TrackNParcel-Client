@@ -8,6 +8,11 @@ import { app } from "../../Firebase/firebase.config";
 import useAxiosPublic from "../../Hook/useAxiosPublic";
 
 const SignUp = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   const auth = getAuth(app);
   const axiosPublic = useAxiosPublic()
   const { user, createUser, profileUpdate, googleLogin } =

@@ -19,6 +19,11 @@ import {
 import { useForm } from "react-hook-form";
 
 const MyParcel = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   const { user } = useContext(AuthContext);
   const axiosPublic = useAxiosPublic();
   const [open, setOpen] = React.useState(false);

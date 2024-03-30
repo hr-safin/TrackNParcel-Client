@@ -3,6 +3,11 @@ import useAxiosSecure from "../Hook/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
 
 const AllDeliveryMan = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   const axiosSecure = useAxiosSecure();
 
   const { data: deliveryMen = [], refetch } = useQuery({

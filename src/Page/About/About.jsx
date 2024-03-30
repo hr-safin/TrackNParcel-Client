@@ -9,18 +9,19 @@ import { Helmet } from "react-helmet";
 import Statistic from "../Home/Statistic";
 
 const About = () => {
+  
   return (
     <>
       <Helmet>
         <title>TrackNParcel | About Us</title>
       </Helmet>
       <div className="w-full  mx-auto">
-        <div
-          className="hero min-h-[30vh]"
-        >
+        <div className="hero min-h-[30vh]">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="mb-5 text-3xl md:text-4xl font-bold lg:pt-16">About Us</h1>
+              <h1 className="mb-5 text-3xl md:text-4xl font-bold lg:pt-16">
+                About Us
+              </h1>
             </div>
           </div>
         </div>
@@ -57,13 +58,11 @@ const About = () => {
         </div>
       </div>
       <div className=" pt-16 xl:pt-32">
-      <Statistic/>
+        <Statistic />
       </div>
       <div className=" pt-16">
         <div className="bg-gray-300 px-4 py-20 lg:h-[300px]">
-          <h2 className=" text-4xl text-center">
-            How Delivery Works
-          </h2>
+          <h2 className=" text-4xl text-center">How Delivery Works</h2>
           <p className=" text-gray-800 lg:w-[600px] mx-auto py-3 text-center">
             {" "}
             ordering is simple, and delivery is swift. Once you place your

@@ -4,6 +4,11 @@ import useAxiosPublic from '../Hook/useAxiosPublic';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 const BookParcel = () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
     const {user} = useContext(AuthContext)
 
     const axiosPublic = useAxiosPublic()

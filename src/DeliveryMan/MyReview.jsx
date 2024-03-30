@@ -3,6 +3,11 @@ import useAxiosPublic from '../Hook/useAxiosPublic';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { Rating } from "@material-tailwind/react";
 const MyReview = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

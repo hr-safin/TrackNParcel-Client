@@ -4,6 +4,11 @@ import { useQuery } from "@tanstack/react-query";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const AllUser = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
   const [currentPage, setCurrentPage] = useState(1);
 
   const axiosSecure = useAxiosSecure();

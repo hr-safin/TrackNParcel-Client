@@ -8,6 +8,11 @@ import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 
 const MyDeliveryList = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 
   const axiosPublic = useAxiosPublic()
   const {user} = useContext(AuthContext)
