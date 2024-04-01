@@ -75,8 +75,10 @@ const About = () => {
       </div>
       <div className=" pt-16">
         <div className="bg-gray-300 px-4 py-20 lg:h-[300px]">
-          <h2 className=" text-4xl text-center">How Delivery Works</h2>
-          <p className=" text-gray-800 lg:w-[600px] mx-auto py-3 text-center">
+          <h2 data-aos="fade-up"
+        data-aos-duration="2500" className=" text-4xl text-center">How Delivery Works</h2>
+          <p data-aos="fade-up"
+        data-aos-duration="3000" className=" text-gray-800 lg:w-[600px] mx-auto py-3 text-center">
             {" "}
             ordering is simple, and delivery is swift. Once you place your
             order, we handle the rest. Track your parcel in real-time, and our
@@ -86,7 +88,8 @@ const About = () => {
         </div>
 
         <div className=" lg:px-14 px-4 -mt-10 grid grid-cols-2 md:grid-cols-2 place-items-center lg:grid-cols-4  gap-9 lg:gap-10">
-          <div className=" flex flex-col items-center gap-4">
+          <div data-aos="fade-up"
+        data-aos-duration="2000" className=" flex flex-col items-center gap-4">
             <span className=" text-5xl bg-green-700  text-white py-3 px-5 rounded-md">
               <CiShoppingCart />
             </span>
@@ -98,7 +101,8 @@ const About = () => {
               you're always in the know.{" "}
             </p>
           </div>
-          <div className=" flex flex-col items-center gap-4">
+          <div data-aos="fade-up"
+        data-aos-duration="2000" className=" flex flex-col items-center gap-4">
             <span className=" text-5xl bg-green-700  text-white py-3 px-5 rounded-md">
               <MdPayments />
             </span>
@@ -109,7 +113,8 @@ const About = () => {
               purchases with ease.{" "}
             </p>
           </div>
-          <div className=" flex flex-col items-center gap-4">
+          <div data-aos="fade-up"
+        data-aos-duration="2500" className=" flex flex-col items-center gap-4">
             <span className=" text-5xl bg-green-700  text-white py-3 px-5 rounded-md">
               <CiDeliveryTruck />
             </span>
@@ -121,7 +126,8 @@ const About = () => {
               real-time and get it in time.{" "}
             </p>
           </div>
-          <div className=" flex flex-col items-center gap-4">
+          <div data-aos="fade-up"
+        data-aos-duration="3000" className=" flex flex-col items-center gap-4">
             <span className=" text-5xl bg-green-700  text-white py-3 px-5 rounded-md">
               <FaBoxOpen />
             </span>
