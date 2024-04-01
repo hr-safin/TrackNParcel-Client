@@ -134,8 +134,7 @@ export default function Footer() {
           <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
           <div
-            data-aos="fade-up"
-            data-aos-duration="3000"
+            
             class="flex flex-col items-center justify-between sm:flex-row"
           >
             <div className=" flex items-center gap-2">
