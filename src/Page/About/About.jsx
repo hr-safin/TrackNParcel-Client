@@ -9,7 +9,6 @@ import { Helmet } from "react-helmet";
 import Statistic from "../Home/Statistic";
 
 const About = () => {
-  
   return (
     <>
       <Helmet>
@@ -19,7 +18,11 @@ const About = () => {
         <div className="hero min-h-[30vh]">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-3xl md:text-4xl font-bold lg:pt-16">
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                className="text-3xl md:text-4xl font-bold lg:pt-16"
+              >
                 About Us
               </h1>
             </div>
@@ -28,15 +31,24 @@ const About = () => {
 
         <div className=" bg-white lg:px-20 md:px-10 px-4 lg:my-10  my-0 mb-20  flex flex-col lg:flex-row justify-center gap-20 lg:ga-40 items-center">
           <div>
-            <h2 className=" -mt-5 sm:mt-0 w-[300px] mx-auto sm:mx-0 sm:w-full  text-3xl md:text-4xl text-center lg:text-left  lg:text-5xl font-bold tracking-wider text-gray-900">
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              className=" -mt-5 sm:mt-0 w-[300px] mx-auto sm:mx-0 sm:w-full  text-3xl md:text-4xl text-center lg:text-left  lg:text-5xl font-bold tracking-wider text-gray-900"
+            >
               Best Service To Deliver Your Needs
             </h2>
-            <p className=" text-gray-600 lg:text-left text-center lg:w-[500px] pt-6 pb-6">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2500"
+              className=" text-gray-600 lg:text-left text-center lg:w-[500px] pt-6 pb-6"
+            >
               express connection to seamless courier services. Swift, secure,
               and reliable deliveries tailored to meet your needs. Let us
               redefine the way you send and receive parcels.
             </p>
-            <div className=" pt-5 flex  lg:flex md:flex md:flex-row lg:flex-row md:items-center md:justify-center lg:items-start lg:justify-start gap-10 items-center justify-center">
+            <div data-aos="fade-up"
+          data-aos-duration="3000" className=" pt-5 flex  lg:flex md:flex md:flex-row lg:flex-row md:items-center md:justify-center lg:items-start lg:justify-start gap-10 items-center justify-center">
               <div className=" rounded-md text-center text-white px-8 py-5 bg-green-600">
                 <h2 className=" text-4xl font-bold">300</h2>
                 <h2> Trusted Partner</h2>
@@ -48,7 +60,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="pl-20">
+          <div data-aos="fade-up"
+          data-aos-duration="2000" className="pl-20">
             <img
               className="lg:w-[90%]  md:w-[70%] mx-auto"
               src="https://kitpro.site/delivey/wp-content/uploads/sites/70/2022/02/happy-young-delivery-man-holding-pizza-box-against-2022-02-07-22-22-56-utc-copy2.png"

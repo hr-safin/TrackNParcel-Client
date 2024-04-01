@@ -8,7 +8,7 @@ import FeatureSection from "./FeatureSection";
 import TopDeliveryMen from "./TopDeliveryMen";
 import About from "../About/About";
 import ContactUsHome from "../ContactUs/ContactUsHome";
-import "./home.css"
+import "./home.css";
 
 const Home = () => {
   return (
@@ -25,15 +25,29 @@ const Home = () => {
           <div className="hero-contentt text-center text-neutral-content">
             <div className="max-w-3xl pt-10">
               <div className="  ">
-                <h2 className=" tracking-wider text-4xl w-[350px] mx-auto md:w-full md:text-4xl lg:text-5xl text-white  font-extrabold pb-5 pt-4">
+                <h2
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  className=" tracking-wider text-4xl w-[350px] mx-auto md:w-full md:text-4xl lg:text-5xl text-white  font-extrabold pb-5 pt-4"
+                >
                   Reliable Service Every Time
                 </h2>
 
-                <p className="tracking-wider text-white  w-[350px] mx-auto md:w-full text-base pb-7 font-bold">
-                Welcome to TrackNParcel, your complete parcel solution. From tracking to delivery, we ensure efficiency and security for all businesses.
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  className="tracking-wider text-white  w-[350px] mx-auto md:w-full text-base pb-7 font-bold"
+                >
+                  Welcome to TrackNParcel, your complete parcel solution. From
+                  tracking to delivery, we ensure efficiency and security for
+                  all businesses.
                 </p>
 
-                <form className=" w-full md:w-[70%] mx-auto">
+                <form
+                  data-aos="fade-up"
+                  data-aos-duration="2500"
+                  className=" w-full md:w-[70%] mx-auto"
+                >
                   <label
                     for="search"
                     class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
