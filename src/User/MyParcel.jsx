@@ -112,7 +112,11 @@ const MyParcel = () => {
   return (
     <>
       {parcel.length > 0 ? (
-        <div className="min-h-screen pt-20 md:pt-20 lg:pt-32 px-6">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="min-h-screen pt-20 md:pt-20 lg:pt-32 px-6"
+        >
           <div className=" flex justify-center items-center">
             <h2 className=" text-4xl font-bold pt-16">My Parcel</h2>
           </div>
