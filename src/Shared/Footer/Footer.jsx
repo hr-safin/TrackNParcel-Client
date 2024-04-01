@@ -5,8 +5,9 @@ export default function Footer() {
   return (
     <>
       {/*    <!-- Component: Dark Theme Footer --> */}
-      <footer class="bg-white mt-8">
-        <div class="container px-6 py-12 mx-auto">
+      <footer  class="bg-white mt-8">
+        <div data-aos="fade-up"
+        data-aos-duration="2500" class="container px-6 py-12 mx-auto">
           {/* <div class="md:flex md:-mx-3 md:items-center md:justify-between">
             <h1 class="text-xl font-semibold tracking-tight text-gray-800 md:mx-3 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
             

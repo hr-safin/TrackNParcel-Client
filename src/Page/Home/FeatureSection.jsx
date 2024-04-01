@@ -13,12 +13,14 @@ const FeatureSection = () => {
   return (
     <div
     >
-      <div className=" flex justify-center items-center text-3xl md:text-4xl font-bold pt-32">
+      <div data-aos="fade-up"
+        data-aos-duration="2000" className=" flex justify-center items-center text-3xl md:text-4xl font-bold pt-40">
         Our Feature
       </div>
 
       <div className=" lg:px-24 px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-10 p-10">
-        <div>
+        <div data-aos="fade-up"
+        data-aos-duration="3000">
           <Card className="mt-6 ">
             <CardBody className=" text-center">
                 <div className=" flex justify-center items-center pb-3">
@@ -35,7 +37,8 @@ const FeatureSection = () => {
            
           </Card>
         </div>
-        <div>
+        <div data-aos="fade-up"
+        data-aos-duration="3000">
           <Card className="mt-6 ">
             <CardBody className=" text-center">
             <div className=" flex justify-center items-center pb-3">
@@ -51,7 +54,8 @@ const FeatureSection = () => {
             
           </Card>
         </div>
-        <div>
+        <div data-aos="fade-up"
+        data-aos-duration="3000">
           <Card className="mt-6 ">
             <CardBody className=" text-center">
             <div className=" flex justify-center items-center pb-3">

@@ -17,7 +17,8 @@ const TopDeliveryMen = () => {
 
   return (
     <div>
-      <div className="text-3xl md:text-4xl text-center font-bold pt-28">
+      <div data-aos="fade-up"
+        data-aos-duration="2000" className="text-3xl md:text-4xl text-center font-bold pt-28">
         <h2>Top Delivery Men</h2>
       </div>
 
@@ -29,7 +30,8 @@ const TopDeliveryMen = () => {
           //   <p className="mt-2">Parcels Delivered: {deliveryMan.deliveredCount}</p>
           //   <p>Average Rating: {deliveryMan.averageReview}</p>
           // </div>
-          <div class="w-full h-auto max-w-md overflow-hidden bg-white rounded-lg shadow-lg ">
+          <div data-aos="fade-up"
+          data-aos-duration="3000"  class="w-full h-auto max-w-md overflow-hidden bg-white rounded-lg shadow-lg ">
             <img
               class="object-cover w-full max-h-[380px]"
               src={deliveryMan.image}
