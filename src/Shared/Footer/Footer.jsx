@@ -5,9 +5,8 @@ export default function Footer() {
   return (
     <>
       {/*    <!-- Component: Dark Theme Footer --> */}
-      <footer  class="bg-white mt-8">
-        <div data-aos="fade-up"
-        data-aos-duration="2500" class="container px-6 py-12 mx-auto">
+      <footer class="bg-white mt-8">
+        <div class="container px-6 py-12 mx-auto">
           {/* <div class="md:flex md:-mx-3 md:items-center md:justify-between">
             <h1 class="text-xl font-semibold tracking-tight text-gray-800 md:mx-3 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
             
@@ -24,7 +23,11 @@ export default function Footer() {
 
           <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
-          <div class="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2500"
+            class="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          >
             <div>
               <p class="font-semibold text-gray-800 dark:text-white">
                 Quick Link
@@ -130,7 +133,11 @@ export default function Footer() {
 
           <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
-          <div class="flex flex-col items-center justify-between sm:flex-row">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="flex flex-col items-center justify-between sm:flex-row"
+          >
             <div className=" flex items-center gap-2">
               <img className="w-[40px]" src={img} alt="" />
               <h2 className="mr-4 text-2xl font-bold cursor-pointer">

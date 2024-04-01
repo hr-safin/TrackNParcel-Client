@@ -16,7 +16,7 @@ const ContactUsHome = () => {
 
             <p
               data-aos="fade-up"
-              data-aos-duration="2500"
+              data-aos-duration="3000"
               class="mt-3 text-gray-600 text-center"
             >
               Our friendly team would love to hear from you.
@@ -27,7 +27,7 @@ const ContactUsHome = () => {
             class="grid grid-cols-1 gap-12 mt-20 lg:grid-cols-3"
           >
             <div data-aos="fade-up"
-            data-aos-duration="3000" class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
+            data-aos-duration="2500" class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
               <div>
                 <span class="inline-block p-3 text-green-500 rounded-full bg-green-100/80 dark:bg-gray-800">
                   <svg
@@ -55,7 +55,8 @@ const ContactUsHome = () => {
                 </p>
               </div>
 
-              <div>
+              <div data-aos="fade-up"
+              data-aos-duration="3000">
                 <span class="inline-block p-3 text-green-500 rounded-full bg-green-100/80 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +90,8 @@ const ContactUsHome = () => {
                 </p>
               </div>
 
-              <div>
+              <div data-aos="fade-up"
+              data-aos-duration="3000">
                 <span class="inline-block p-3 text-green-500 rounded-full bg-green-100/80 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
